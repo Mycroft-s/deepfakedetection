@@ -15,7 +15,9 @@ DeepFake detection is essential in various fields to ensure the authenticity of 
 The project includes three main components:
 
 1.Data Preprocessing: Extracting frames from real and fake videos for training.
+
 2.Model Training: Fine-tuning a ViT model on the custom image dataset. 
+
 3.Single Image Testing: Testing the trained model on individual images for classification.
 
 Features：
