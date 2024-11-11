@@ -70,4 +70,21 @@ Detailed Classification Report:
    macro avg       0.91      0.52      0.50      5718
 weighted avg       0.88      0.88      0.83      5718
 
+
+Evaluation Results 2.0:
+Accuracy: 0.7343
+Precision: 0.0983
+Recall: 0.1336
+F1 Score: 0.1133
+
+Detailed Classification Report:
+              precision    recall  f1-score   support
+
+        FAKE       0.87      0.82      0.84      4992
+        REAL       0.10      0.13      0.11       726
+
+    accuracy                           0.73      5718
+   macro avg       0.48      0.48      0.48      5718
+weighted avg       0.77      0.73      0.75      5718
+
 '''
