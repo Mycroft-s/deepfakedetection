@@ -6,7 +6,7 @@ The Fine Tuning Model is in here:
 https://drive.google.com/drive/folders/15BahTRQzD7EUeOBCj2xPFSDa4i3H249w?dmr=1&ec=wgc-drive-hero-goto
 
 
-This project uses a Vision Transformer (ViT) model (https://github.com/google-research/vision_transformer) to detect DeepFake images by fine-tuning it on a custom dataset created from the FaceForensics DeepFake Detection dataset (https://github.com/ondyari/FaceForensics). Using OpenCV, frames are extracted from real and fake videos to create the dataset, which is then used to train a ViT model for AI-based image classification.
+This project uses a Vision Transformer (ViT) model (https://github.com/google-research/vision_transformer) to detect DeepFake images by fine-tuning it on a custom dataset created from the FaceForensics DeepFake Detection dataset (https://github.com/ondyari/FaceForensics). Using OpenCV (https://docs.opencv.org/3.4/d8/dfe/classcv_1_1VideoCapture.html#a57c0e81e83e60f36c83027dc2a188e80), frames are extracted from real and fake videos to create the dataset, which is then used to train a ViT model for AI-based image classification.
 
 
 Project Overview：
