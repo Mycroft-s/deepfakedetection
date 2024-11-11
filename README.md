@@ -15,7 +15,7 @@ DeepFake detection is essential in various fields to ensure the authenticity of 
 
 The project includes three main components:
 
-1.Data Preprocessing: Extracting frames from real and fake videos for training.
+1.Data Preprocessing: Extracting frames from real and fake videos for training. We use data from: https://github.com/ondyari/FaceForensics
 
 2.Model Training: Fine-tuning a ViT model on the custom image dataset. 
 
