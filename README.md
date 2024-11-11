@@ -15,9 +15,12 @@ DeepFake detection is essential in various fields to ensure the authenticity of 
 
 The project includes three main components:
 
-1.Data Preprocessing: Extracting frames from real and fake videos for training. 
+1.Data Preprocessing: Extracting frames from real and fake videos to create a images dataset for training. 
 
 2.Model Training: Fine-tuning a ViT model on the custom image dataset. 
+To improve model performance on an imbalanced dataset, this project employs a weighted loss function to help the model focus more on the minority class, which is the "REAL" class in this case. In the dataset, the "FAKE" class has significantly more samples than the "REAL" class, causing the model to potentially favor predicting "FAKE" during training. To address this issue, we apply a weighted loss strategy.
+
+Specifically, we calculate weights for each class based on the inverse of their sample frequencies. This means the less frequent "REAL" class is assigned a higher weight, resulting in a larger penalty for misclassifying samples from this class. This approach adjusts the loss function so the model places greater emphasis on learning from the "REAL" class, helping to balance the impact of each class in the training process and ultimately enhancing model performance on imbalanced data.
 
 3.Single Image Testing: Testing the trained model on individual images for classification.
 
